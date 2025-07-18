@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    font-family: 'Segoe UI', sans-serif;
+    transition: 0.4s;
+}
+
+.Clock-container{
+    background-color: #222;
+    padding: 40px 60px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 100px darkblue;
+}
+#Clock{
+    font-size: 60px;
+    color: #0ff;
+    letter-spacing: 3px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px blue;
+}
+#date{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #aaa;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 10px blue;
+}
+#theme-toggle{
+    background-color: transparent;
+    color: #0ff;
+    border: 2px solid #0ff;
+    padding: 6px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 15px;
+    box-shadow: 0.25px 0.25px 5px blue;
+}
+body.light-mode{
+    background-color: #f5f5f5;
+    color: #111;
+
+}
+
+body.light-mode .Clock-container{
+    background-color: blueviolet;
+    box-shadow: 2px 2px 100px darkorange;
+}
+body.light-mode #Clock{
+    color: #222;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px yellow;
+}
+body.light-mode #date{
+    color: #666;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 10px yellow;
+
+}
+body.light-mode #theme-toggle{
+    color: #333;
+    border-color: #333;
+    box-shadow: 0.25px 0.25px 5px yellow;
+}
